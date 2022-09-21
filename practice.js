@@ -8,6 +8,17 @@
         console.log("sorry! You can not buy this product");
     }
 
+    // 2) Solve the problem with Javascript  to find a maximum between three numbers.
+    var  age = 35;
+    if (age <18){
+      console.log("You will enter no.1 gate");
+  }
+  if (age < 18){
+      console.log("You will enter no.2 gate");
+  }
+  if (age >= 30){
+    console.log("You will enter no.3 gate");
+}
 
     // 3) Solve the problem with Javascript  to check whether a number is negative, positive or zero.
 
@@ -43,6 +54,25 @@
         console.log("The number is not divisible by 10");
     }
 
+    // 5) Solve the problem with Javascript  to check whether a number is even or odd.
+
+    let number = 25;
+    if (number % 2== 0) {
+        console.log(number, "is an even number");
+    }
+    else {
+        console.log(number, "is a odd number");
+    }
+
+
+    let countNumber = 40;
+    if (countNumber % 2== 0) {
+        console.log(countNumber, "is an even number");
+    }
+    else {
+        console.log(countNumber, "is a odd number");
+    }
+
     // 7) Solve the problem with Javascript  to check weather the temperature is hot, cold or normal. (30 <=  is hot, 25 >= is cold , anyother value is normal)
 
     var temp = 20;
@@ -62,17 +92,22 @@
     
       console.log("Marks", totalMarks, english, math, physics);
     
-      if (totalMarks >= 280) {
-        console.log(person, "You got A+");
-      } else if (totalMarks >= 250) {
-        console.log(person, "You got B+");
-      } else if (totalMarks >= 200) {
+      if (totalMarks >= 270) {
+        console.log(person, "You got A");
+      } else if (totalMarks >= 240) {
+        console.log(person, "You got B");
+      } else if (totalMarks >= 210) {
         console.log(person, "You got C");
-      } else {
-        console.log(person, "fail");
+      } else if (totalMarks >= 180) {
+        console.log(person, "You got D");
+      }else if (totalMarks >= 120) {
+        console.log(person, "You got E");
+      }else if (totalMarks < 120) {
+        console.log(person, "You got F");
       }
+      
     }
-    gpaCounter("shamoli", 90, 95, 95);
+    gpaCounter("shamoli", 90, 93, 98);
 
 
 
@@ -112,7 +147,14 @@
         married: true,
         };
 
-        console.log(car.weight, student["age"]);
+        const laptop = {
+          company: "Hp",
+          processor: "Core-i5",
+          generation: "11th gen",
+          ram: "8 GB"
+          };
+
+        console.log(car.weight, student["age"],laptop.company);
 
     // 11) Create a while loop which prints values from 10 to 50
 
@@ -153,24 +195,64 @@
     }
   leapYear(2032);
 
-    // 17) Solve the problem with Javascript  to check whether a number is even or odd.
 
-    let number = 15;
-    if (number % 2== 0) {
-        console.log(number, "is an even number");
-    }
-    else {
-        console.log(number, "is a odd number");
-    }
+  // 18) Splice and an given array - remove two items and adding two new elements
+
+  let newFruits = ["Banana", "Orange", "Apple", "Mango", "Jackfruits", "papaya"];
+  let Splice = newFruits.splice(0,2, "Tamarind", "Olive")
+  console.log(newFruits);
+
+  //==================+++++++++++++++++++++============================
+
+  let carCompany = [0, "Tesla", "Toyota", "Honda", "BMW", "Mercedes", "Rolce royals", "hundyai", true, null];
+  carCompany.pop();
+  carCompany.push("Ferrari", "Suzuki");
+  carCompany.shift();
+  carCompany.unshift("Mitshubishi", "Lamborgini");
+
+  console.log(carCompany);
+
+  // 19) Reverse and sort an array where arr = [2,45,4,55,12,42,34,78]
+
+  let luckyNumbers = [2, 45, 4, 55, 12, 42, 34, 78];
+  console.log(luckyNumbers.sort());
+  console.log(luckyNumbers.reverse());
+
+// 20) Create a object with car and add two function in there (called methods as well) and print out the the result calling two functions using this keyword as well
+
+  const myCar = {
+    brand: "BMW",
+    weight: "1450kg",
+    model: 2011,
+  };
+  
+  const myStudent = {
+    stuName: "Shahria",
+    age: "23",
+    married: true,
+  };
+  
+  console.log(myCar.weight, myStudent["age"]);
+
+  // 21) Reverse an given string. Where, - let text = “I love coding” - after reverse a string output will be - ‘gnidoc evol i’
+
+  const str = "I love coding";
+  const newStr = str.split('');
+  console.log(newStr.reverse().join(''));
 
 
-    let countNumber = 20;
-    if (countNumber % 2== 0) {
-        console.log(countNumber, "is an even number");
-    }
-    else {
-        console.log(countNumber, "is a odd number");
-    }
+  // 22) Create an array with list of items. Iterate the array to view the list of the items in the console using for loop.
+
+  let i = 1;
+
+while (i <= 25) {
+  console.log(i);
+  i++;
+}
+  
+
+
+    
 
 
    
